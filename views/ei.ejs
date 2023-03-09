@@ -1,1 +1,18 @@
-<p>moooii</p>
+<%- include('./partials/head.ejs') %>
+
+<div class="grid-container">
+   
+        
+        <% producten.forEach(product => { %>
+            <% if(product.categorie.titel === "Ei") { %>   
+                <article>
+                    <%= product.titel %>
+                </article>
+            <% } %>   
+        <% }); %>
+ 
+</div>
+
+
+
+<%- include('./partials/foot.ejs') %>

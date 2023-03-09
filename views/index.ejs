@@ -2,23 +2,15 @@
 
 <div class="grid-container">
 
-    <ul>
-        <% data.producten.forEach(product => { %>
-            <li>
-                <%= product.titel %>
-            </li>
-        <% }); %>
-    </ul>
+    <% categories.forEach(category => { %>
 
-<% categories.forEach(category => { %>
-
-    <a class="article-a" href="/<%= category.titel %>">
-        <article>
-            <h2><%= category.titel %></h2>
-            <img class="article-img" src="/<%=category.titel%>.png">
-        </article>
-    </a>
-<% }); %>
+        <a class="article-a" href="/<%= category.titel %>">
+            <article>
+                <h2><%= category.titel %></h2>
+                <img class="article-img" src="/<%=category.titel%>.png">
+            </article>
+        </a>
+    <% }); %>
 </div>
 
 <%- include('./partials/foot.ejs') %>

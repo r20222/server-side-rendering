@@ -25,13 +25,43 @@ app.get('/', (request, response) => {
 })
 
 // dit plak je aan de basis url van de api, /producten
-app.get('/', (request, response) => {
+app.get('/Ei', async (request, response) => {
   let productenUrl = url + '/producten'
 
-  fetchJson(productenUrl).then((data) => {
-    response.render('index', data )
+  await fetchJson(productenUrl).then((data) => {
+    response.render('Ei', data )
   })
 })
+
+
+// van de chatgpt
+// app.get('/', async (request, response) => {
+//   let categoriesUrl = url + '/categories'
+//   let productenUrl = url + '/producten'
+
+//   let [categories, producten] = await Promise.all([
+//     fetchJson(categoriesUrl),
+//     fetchJson(productenUrl)
+//   ])
+
+//   if (!Array.isArray(producten)) {
+//     // Als producten geen array is, maak er dan een lege array van
+//     producten = [producten]
+//   }
+//   if (!Array.isArray(categories)) {
+//     // Als producten geen array is, maak er dan een lege array van
+//     categories = []
+//   }
+
+//   let data = {
+//     categories: categories,
+//     producten: producten
+//   }
+
+//   response.render('index', data)
+// })
+
+
 
 
 // nieuw probeersel haal data op
@@ -63,8 +93,8 @@ app.get('/', (request, response) => {
 
 
 // geen idee
-// app.get('/ei', (request, response) => {
-//   response.render('ei', data)
+// app.get('/Ei', (request, response) => {
+//   response.render('Ei')
 // })
 
 // app.get('/contact', (request, response) => {
