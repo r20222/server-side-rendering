@@ -33,6 +33,15 @@ app.get('/Ei', async (request, response) => {
   })
 })
 
+// route naar pinda.ejs
+app.get('/Pinda', async (request, response) => {
+  let productenUrl = url + '/producten'
+
+  await fetchJson(productenUrl).then((data) => {
+    response.render('Pinda', data )
+  })
+})
+
 
 // van de chatgpt
 // app.get('/', async (request, response) => {
@@ -92,10 +101,34 @@ app.get('/Ei', async (request, response) => {
 // })
 
 
-// geen idee
-// app.get('/Ei', (request, response) => {
-//   response.render('Ei')
-// })
+// pagina's zonder inhoud van andere allergenen
+app.get('/Amandel', (request, response) => {
+  response.render('Amandel')
+})
+
+app.get('/Schelp', (request, response) => {
+  response.render('Schelp')
+})
+
+app.get('/Soja', (request, response) => {
+  response.render('Soja')
+})
+
+app.get('/Vis', (request, response) => {
+  response.render('Vis')
+})
+
+app.get('/Hazelnoot', (request, response) => {
+  response.render('Hazelnoot')
+})
+
+app.get('/Walnoot', (request, response) => {
+  response.render('Walnoot')
+})
+
+app.get('/Cashewnoot', (request, response) => {
+  response.render('Cashewnoot')
+})
 
 // app.get('/contact', (request, response) => {
 //   response.render('contact')

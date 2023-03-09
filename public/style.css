@@ -83,14 +83,9 @@ nav span{
 article{
     width:80vw;
     height:17rem;
-    /* background-color: var(--vinimini-pinda-blue); */
     border: 2px solid black;
     color:black;    
     text-decoration: none;
-    /* display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     text-align: center;
 }
 article h2{
@@ -102,5 +97,18 @@ article h2{
 .article-img{
     position:relative;
     top: 1.5rem;
- 
+    max-height:10rem;
+}
+
+/* footer */
+
+footer{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+}
+footer h6{
+    width: 80vw;
 }
