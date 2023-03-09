@@ -15,13 +15,41 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 // dit plak je aan de basis url van de api, /categories
+// { categories: data.categories } toen het niet werkte, werkt nu wel met enkel data
 app.get('/', (request, response) => {
   let categoriesUrl = url + '/categories'
 
   fetchJson(categoriesUrl).then((data) => {
-    response.render('index', { categories: data.categories })
+    response.render('index', data)
   })
 })
+
+// dit plak je aan de basis url van de api, /producten
+app.get('/', (request, response) => {
+  let productenUrl = url + '/producten'
+
+  fetchJson(productenUrl).then((data) => {
+    response.render('index', data )
+  })
+})
+
+
+// nieuw probeersel haal data op
+// const productenUrl = url + '/producten'
+// const producten = await fetch(productenUrl)
+//   .then((response) => response.json())
+//   .catch((error) => error)
+
+// console.log(producten)
+
+// // maak een route voor de data
+// app.get('/', (request, response) => {
+//   // console.log(request.query.squad)
+
+//   response.render('index', {producten: data.producten})
+// })
+
+
 
 
 // app.get('/sprint', (request, response) => {
