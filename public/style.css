@@ -82,8 +82,9 @@ nav span{
 }
 article{
     width:80vw;
-    height:17rem;
-    border: 2px solid black;
+    height:18rem;
+    border-radius: 27.5px;
+    box-shadow: 0px 0px 10px 1px var(--vinimini-pinda-blue);
     color:black;    
     text-decoration: none;
     text-align: center;
