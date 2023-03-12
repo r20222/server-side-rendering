@@ -17,14 +17,13 @@
     --vinimini-grey-brown: #C3B59B;
 }
 
-/* overflow problems */
+/* HTML & body */
 html{
     max-width:100vw;
 }
 body{
     max-width: 100vw;
 }
-
 
 /* navigatie */
 nav{
@@ -102,7 +101,6 @@ article h2{
 }
 
 /* footer */
-
 footer{
     margin-top:2rem;
     margin-bottom: 2rem;
