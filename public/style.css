@@ -42,8 +42,6 @@ nav > ul > li{
 }
 nav > ul > li > a{
     text-decoration: none;
-
-
     display:flex;
     flex-direction: column;
 }
@@ -80,13 +78,19 @@ nav span{
     text-decoration: none;
 }
 article{
-    width:80vw;
+    width:85vw;
     height:18rem;
     border-radius: 27.5px;
     box-shadow: 0px 0px 10px 1px var(--vinimini-pinda-blue);
     color:black;    
     text-decoration: none;
     text-align: center;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+article:hover{
+    background-color: var(--vinimini-fish-blue);
 }
 article h2{
     position: relative;
@@ -95,9 +99,10 @@ article h2{
 
 /* plaatjes in articles */
 .article-img{
-    position:relative;
-    top: 1.5rem;
-    max-height:10rem;
+    position:absolute;
+    top:calc(50% - 5rem);
+    align-self: center  ;
+    height:10rem;
 }
 
 /* footer */
@@ -109,5 +114,5 @@ footer{
     justify-content: center;
 }
 footer h6{
-    width: 80vw;
+    width: 85vw;
 }

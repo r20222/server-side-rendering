@@ -42,65 +42,6 @@ app.get('/Pinda', async (request, response) => {
   })
 })
 
-
-// van de chatgpt
-// app.get('/', async (request, response) => {
-//   let categoriesUrl = url + '/categories'
-//   let productenUrl = url + '/producten'
-
-//   let [categories, producten] = await Promise.all([
-//     fetchJson(categoriesUrl),
-//     fetchJson(productenUrl)
-//   ])
-
-//   if (!Array.isArray(producten)) {
-//     // Als producten geen array is, maak er dan een lege array van
-//     producten = [producten]
-//   }
-//   if (!Array.isArray(categories)) {
-//     // Als producten geen array is, maak er dan een lege array van
-//     categories = []
-//   }
-
-//   let data = {
-//     categories: categories,
-//     producten: producten
-//   }
-
-//   response.render('index', data)
-// })
-
-
-
-
-// nieuw probeersel haal data op
-// const productenUrl = url + '/producten'
-// const producten = await fetch(productenUrl)
-//   .then((response) => response.json())
-//   .catch((error) => error)
-
-// console.log(producten)
-
-// // maak een route voor de data
-// app.get('/', (request, response) => {
-//   // console.log(request.query.squad)
-
-//   response.render('index', {producten: data.producten})
-// })
-
-
-
-
-// app.get('/sprint', (request, response) => {
-//   let slug = request.query.sprintSlug || 'your-tribe'
-//   let sprintUrl = url + '/sprint/' + slug
-//   fetchJson(sprintUrl).then((data) => {
-//     // console.log(data)
-//     response.render('sprint', data)
-//   })
-// })
-
-
 // pagina's zonder inhoud van andere allergenen
 app.get('/Amandel', (request, response) => {
   response.render('Amandel')
@@ -129,10 +70,6 @@ app.get('/Walnoot', (request, response) => {
 app.get('/Cashewnoot', (request, response) => {
   response.render('Cashewnoot')
 })
-
-// app.get('/contact', (request, response) => {
-//   response.render('contact')
-// })
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
