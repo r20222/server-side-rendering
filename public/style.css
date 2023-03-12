@@ -96,6 +96,7 @@ article:hover{
 article h2{
     position: relative;
     top:1rem;
+    z-index: 100;
 }
 
 /* plaatjes in articles */
