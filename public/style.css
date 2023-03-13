@@ -65,6 +65,13 @@ nav span{
     height: 60px;
 }
 
+/* main */
+main{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
 /* index */
 .grid-container{
     width: 100vw;
@@ -118,4 +125,76 @@ footer{
 }
 footer h6{
     width: 85vw;
+}
+
+
+
+
+
+
+/* mediaqueries */
+/* mediaqueries */
+/* mediaqueries */
+
+@media screen and (min-width: 47em){
+    /* index */
+.grid-container{
+    width: 100vw;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 0rem;
+    margin-top:1rem;
+}
+article{
+    width:calc(85vw / 2);
+    height:18rem;
+    border-radius: 27.5px;
+    box-shadow: 0px 0px 10px 1px var(--vinimini-pinda-blue);
+    color:black;    
+    text-decoration: none;
+    text-align: center;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width: 63em){
+    /* index */
+.grid-container{
+    width: 90vw;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 0rem;
+    margin-top:1rem;
+}
+article{
+    width:calc(85vw / 3);
+    height:18rem;
+    border-radius: 27.5px;
+    box-shadow: 0px 0px 10px 1px var(--vinimini-pinda-blue);
+    color:black;    
+    text-decoration: none;
+    text-align: center;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navigatie */
+.vini-mini-logo{
+    height: 100px;
+}
+nav{
+    padding-top: .5rem;
+    background-color: white;
+    height: 7rem;
+    width:85vw;
+    justify-self: center;
+    align-self: center;
+}
 }
