@@ -110,6 +110,7 @@ nav span{
     top: .5rem;
     rotate: 45deg;
     color:white;
+    cursor: pointer;
 }
 
 /* main */
