@@ -96,6 +96,7 @@ article:hover{
 article h2{
     position: relative;
     top:1rem;
+    padding: 0 1rem 0 1rem;
     z-index: 100;
 }
 
