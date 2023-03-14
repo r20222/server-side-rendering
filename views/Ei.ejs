@@ -1,7 +1,20 @@
 <%- include('./partials/head.ejs') %>
 
 <div class="grid-container">
-   
+
+    <article class="introduction tips">
+        <% producten.forEach(product => { %>
+            <% if(product.categorie.titel === "Ei") { %> 
+            <ul>  
+                    
+                <% product.tips.forEach(function(tip) { %>
+                    <li><%= tip.tekst %></li>
+                  <% }); %>
+                       
+            </ul>
+            <% } %>
+        <% }); %>
+    </article>
         
         <% producten.forEach(product => { %>
             <% if(product.categorie.titel === "Ei") { %>   

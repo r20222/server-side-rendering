@@ -33,6 +33,7 @@ app.get('/Ei', async (request, response) => {
   })
 })
 
+
 // route naar pinda.ejs
 app.get('/Pinda', async (request, response) => {
   let productenUrl = url + '/producten'

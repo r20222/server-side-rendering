@@ -146,7 +146,14 @@ article{
     flex-direction: column;
 }
 
-
+.introduction > h1, .introduction > p{
+    color:var(--vinimini-dark-blue);
+    text-align: start;
+    padding: 1rem;
+}
+.introduction, .introduction:hover{
+    background-color: var(--vinimini-hazelnut-blue);
+}
 
 .pointer-event-none{
     pointer-events: none;
