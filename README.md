@@ -41,12 +41,28 @@ Bij het maken van deze opdracht heb ik gebruik gemaakt van:
 
 Ik heb bij het maken van deze opdracht voor het eerst in mijn leven gemaakt:
 * Overlay navigatie menu
+* Een goed werkende slider caroussel
+
+Wat ik er nog in moet gaan maken:
+
+* [ ] Duidelijke knop die aangeeft dat je kan klikken voor meer informatie
+* [ ] De stappenplannen moeten er nog ingezet worden
+* [ ] De prijs moet worden weergegeven
+* [ ] Een winkelwagen waar je de producten in kan doen
 
 ## Installatie
 
+Om verder te werken aan dit project heb je Node.js nodig.
+
 ## Gebruik
 
+De website kan je gebruiken om een juist product te vinden om een allergie in kinderen te voorkomen.
+
 ## Bronnen
+
+* Lessen op school van FDND
+* W3 schools heeft mij geholpen bij het maken van het overlay menu en ook de tips slider.
+* Figma, dit heb ik gebruikt voor het maken van ontwerpen
 
 ## Licentie
 
