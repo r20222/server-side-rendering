@@ -168,6 +168,51 @@ article h2{
     z-index: 100;
 }
 
+
+/* tips container */
+
+.tips-container{
+   top:-1rem;
+   text-align: start;
+   overflow-y:scroll;
+   box-shadow: none;
+}
+/* scrollbar invisible */
+.tips-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.tips-container ul, .tips-container h2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+.tips-container ul{
+    margin-top:2rem;
+}
+.tips-container ul li{
+    list-style-type:none;
+}
+.button-tips-right{
+    left:calc(85vw - 2.6rem);
+}
+.button{
+    position:relative;;
+    height: 2rem;
+    z-index: 200;
+    top: 9rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.button:hover{
+    background-color:var(--Ei);
+}
+
+
+
+
+
 /* plaatjes in articles */
 .article-img{
     position:absolute;
@@ -187,6 +232,11 @@ footer{
 footer p{
     width: 85vw;
 }
+
+
+
+
+
 
 
 
@@ -233,6 +283,13 @@ nav{
 .vini-mini-logo{
     height: 100px;
 }
+
+
+/* tips container */
+
+.button-tips-right{
+    left:calc(85vw / 2 - 2.6rem);
+}
 }
 
 @media screen and (min-width: 63em){
@@ -259,5 +316,9 @@ article{
     flex-direction: column;
 }
 
+/* tips container */
+.button-tips-right{
+    left:calc(85vw / 3 - 2.6rem);
+}
 
 }
