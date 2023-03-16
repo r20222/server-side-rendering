@@ -50,6 +50,7 @@ Wat ik er nog in moet gaan maken:
 * [ ] De stappenplannen moeten er nog ingezet worden
 * [ ] De prijs moet worden weergegeven
 * [ ] Een winkelwagen waar je de producten in kan doen
+* [ ] Mooie desktop menu (is nu nog mobile-first)
 
 ## Installatie
 
