@@ -38,6 +38,7 @@ Bij het maken van deze opdracht heb ik gebruik gemaakt van:
 * Express
 * Vini Mini API
 * CSS
+* mediaqueries
 
 Ik heb bij het maken van deze opdracht voor het eerst in mijn leven gemaakt:
 * Overlay navigatie menu
