@@ -14,6 +14,8 @@
                     <img class="article-img" src="/Pinda-3-stappen.webp" alt="Pinda in 3 stappen">
                 <% } else if(product.titel === "Pinda Opvolgkit") { %> 
                     <img class="article-img" src="/Pinda-opvolgkit.webp" alt="Pinda opvolgkit">
+                <% } else if(product.titel === "Pinda presentje") { %> 
+                    <img class="article-img" src="<%= product.plaatjes[0].url %>" alt="Pinda presentje">
                 <% } %> 
                 </article>
             <% } %>   
