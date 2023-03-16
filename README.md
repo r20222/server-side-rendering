@@ -17,7 +17,13 @@ Tijdens het maken van dit project heb ik gewerkt aan de volgende user-story:
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+
+Op de pagina die ik heb gemaakt kan je filteren op allergeen waarna als je er op drukt alle producten van met die allergeen kan vinden. Ook vind je er de belangrijke tips voor mensen die van plan zijn dit te gaan geven aan hun kinderen.
+
 <!-- Voeg een mooie poster visual toe 📸 -->
+![image](https://user-images.githubusercontent.com/101579892/225694011-96ccf8c9-1521-44f6-bb84-d413ec36b3f5.png)
+![image](https://user-images.githubusercontent.com/101579892/225694143-597a91df-c752-4fb4-be1e-4d452ce141ec.png)
+
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
 https://fierce-dove-fashion.cyclic.app/
