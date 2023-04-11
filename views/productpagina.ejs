@@ -1,0 +1,53 @@
+<%- include('./partials/head.ejs') %>
+
+
+<div class="grid-container">
+
+    <div class="tips-container">
+
+        <button class="button-tips-left button">&#10094;</button>
+        <button class="button-tips-right button">&#10095;</button>
+
+        <% data.producten.forEach(product => { %>
+            
+                <% product.tips.forEach(function(tip) { %>
+                    <article class="introduction tips-container tips-slider">
+                        <h2>Belangrijke tips:</h2>
+                        <ul> 
+                            <li><%= tip.tekst %></li>
+                        </ul>
+                    </article>
+                  <% }); %>
+          
+        <% }); %>
+    </div>
+
+
+<% data.producten.forEach(product =>{ %>
+    <article>
+        <h2><%= product.titel %></h2>
+
+        <% if(product.categorie.titel === 'Pinda') { %>   
+        <img class="article-img" src="<%= product.plaatjes[0].url %>" alt="<%= product.titel %>">
+        <% } else { %>
+            <img class="article-img" src="/suplementen.jpg" alt="<%= product.titel %>">
+        <% } %>
+    </article>
+<% }); %>
+
+</div>
+
+ <% if(data.producten.length === 0){ %>
+    <div class="grid-container">
+        <article>
+            <h2>Helaas pindakaas! Dit product bestaat nog niet.</h2>
+            <img class="article-img" src="/suplementen.jpg">
+        </article>
+    </div>
+ <% } %>
+
+
+
+
+
+<%- include('./partials/foot.ejs') %>

@@ -24,53 +24,65 @@ app.get('/', (request, response) => {
   })
 })
 
-// dit plak je aan de basis url van de api, /producten
-app.get('/Ei', async (request, response) => {
-  let productenUrl = url + '/producten'
+// probeersel dynamisch laden product pagina
+app.get('/productpagina', async (request, response) => {
+  const query = request.query.categorieId
+
+  const productenUrl = url + `/producten?categorieId=${query}`
 
   await fetchJson(productenUrl).then((data) => {
-    response.render('Ei', data )
+    response.render('productpagina', {data: data} )
   })
 })
+
+
+// dit plak je aan de basis url van de api, /producten
+// app.get('/Ei', async (request, response) => {
+//   let productenUrl = url + '/producten'
+
+//   await fetchJson(productenUrl).then((data) => {
+//     response.render('Ei', data )
+//   })
+// })
 
 
 // route naar pinda.ejs
-app.get('/Pinda', async (request, response) => {
-  let productenUrl = url + '/producten'
+// app.get('/Pinda', async (request, response) => {
+//   let productenUrl = url + '/producten'
 
-  await fetchJson(productenUrl).then((data) => {
-    response.render('Pinda', data )
-  })
-})
+//   await fetchJson(productenUrl).then((data) => {
+//     response.render('Pinda', data )
+//   })
+// })
 
 // pagina's zonder inhoud van andere allergenen
-app.get('/Amandel', (request, response) => {
-  response.render('Amandel')
-})
+// app.get('/Amandel', (request, response) => {
+//   response.render('Amandel')
+// })
 
-app.get('/Schelp', (request, response) => {
-  response.render('Schelp')
-})
+// app.get('/Schelp', (request, response) => {
+//   response.render('Schelp')
+// })
 
-app.get('/Soja', (request, response) => {
-  response.render('Soja')
-})
+// app.get('/Soja', (request, response) => {
+//   response.render('Soja')
+// })
 
-app.get('/Vis', (request, response) => {
-  response.render('Vis')
-})
+// app.get('/Vis', (request, response) => {
+//   response.render('Vis')
+// })
 
-app.get('/Hazelnoot', (request, response) => {
-  response.render('Hazelnoot')
-})
+// app.get('/Hazelnoot', (request, response) => {
+//   response.render('Hazelnoot')
+// })
 
-app.get('/Walnoot', (request, response) => {
-  response.render('Walnoot')
-})
+// app.get('/Walnoot', (request, response) => {
+//   response.render('Walnoot')
+// })
 
-app.get('/Cashewnoot', (request, response) => {
-  response.render('Cashewnoot')
-})
+// app.get('/Cashewnoot', (request, response) => {
+//   response.render('Cashewnoot')
+// })
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)

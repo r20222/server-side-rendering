@@ -8,9 +8,10 @@
            Klik op een allergeen om alle producten te zien, informatie erover te lezen en het stappenplan te zien. 
         </p>
     </article>
+
     <% categories.forEach(category => { %>
 
-        <a class="article-a" href="/<%= category.titel %>">
+        <a class="article-a" href="/productpagina?categorieId=<%= category.id %>">
             <article> 
                 <h2><%= category.titel %></h2>
                 <img class="article-img" src="/<%=category.titel%>.png" alt="afbeelding <%=category.titel%>">
