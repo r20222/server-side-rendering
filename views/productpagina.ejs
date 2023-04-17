@@ -27,7 +27,7 @@
     <article>
         <h2><%= product.titel %></h2>
 
-        <% if(product.categorie.titel === 'Pinda') { %>   
+        <% if(product.plaatjes.length !== 0) { %>   
         <img class="article-img" src="<%= product.plaatjes[0].url %>" alt="<%= product.titel %>">
         <% } else { %>
             <img class="article-img" src="/suplementen.jpg" alt="<%= product.titel %>">
